@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<div class="Article-wrapper">
+    <div class="Article-container">
+        <div class="Article-content wrap clearfix">
+            <h1 class="Article-title">{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+        {{ if .Site.Params.ShowRelatedPost }}
+        {{ $baseurl := .Site.BaseURL }}
+        <div class="Article-related">
+            <div class="Article-related-content wrap clearfix">
+                <div class="Article-related-title">
+                    <h3 class="uppercase"><span class="icon-shuffle"></span>More Articles</h3>
+                </div>
+                {{ $page_link := .Permalink }}
+                {{ $tags := .Params.tags }}
+                {{ range .Site.Pages}}
+                    {{ $page := . }}
+                    {{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
+                    {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ partial "footer.html" . }}

@@ -1,0 +1,101 @@
+/***** Typography *****/
+@font-face {
+    font-family: 'Sentinel';
+    src: url('/fonts/Sentinel-Book.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Sentinel-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/Sentinel-Book.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/Sentinel-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Sentinel-Book.svg#fb7f01513910e38bdb2e628a3e62faf5') format('svg'); /* Legacy iOS */
+    font-style:   normal;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('/fonts/Sentinel-BookItal.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Sentinel-BookItal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/Sentinel-BookItal.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/Sentinel-BookItal.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Sentinel-BookItal.svg#10c46c0b2f5286365d095ecb051f5fd4') format('svg'); /* Legacy iOS */
+    font-style:   italic;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('/fonts/Sentinel-Medium.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Sentinel-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/Sentinel-Medium.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/Sentinel-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Sentinel-Medium.svg#8c906be98a0007abd9aa196765a84f28') format('svg'); /* Legacy iOS */
+    font-style:   normal;
+    font-weight:  500;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('/fonts/Sentinel-MediumItal.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Sentinel-MediumItal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/Sentinel-MediumItal.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/Sentinel-MediumItal.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/Sentinel-MediumItal.svg#d4631b1e19290abc6bef2bf9286a54b7') format('svg'); /* Legacy iOS */
+    font-style:   italic;
+    font-weight:  500;
+}
+
+$mono: 'Source Code Pro' ;
+$serif: 'Sentinel', Georgia, Times, 'Times New Roman', serif;
+
+pre, .source-code, code, samp {
+    font-family: $mono;
+    font-size: 0.9em;
+    background: #F4F4F4;
+    padding: 0 5px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    font-family: $serif;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 1.95em;
+    line-height: 1em;
+    font-weight: 400;
+    @include medium-screen-up {
+        font-size: 2.15em;
+    }
+}
+
+h2 {
+    font-size: 1.45em;
+    line-height: 1em;
+    font-weight: 400;
+    @include medium-screen-up {
+        font-size: 1.65em;
+    }
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.15em;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0.5em 0 1em 0;
+}

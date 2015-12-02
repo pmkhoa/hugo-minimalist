@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            {{ if eq .URL "/" }}
+                {{ .Site.Title }}
+            {{ else if eq .URL "/blog/" }}
+                Blog - {{ .Site.Title }}
+            {{ else }}
+                {{ .Title }} - {{ .Site.Title }}
+            {{ end }}
+        </title>
+
+        {{ partial "head_meta.html" }}
+
+
+        <!-- Icons -->
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}/img/favicon.ico">
+
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .Site.BaseURL }}/index.xml">
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/all.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/custom.css">
+    </head>
+    <body lang="en">
+        <nav class="header" role="banner">
+            <div class="inner-header wrap clearfix">
+                <a id="logo" href="/">KHOA  PHAM</a>
+                <ul class="header-nav">
+                    <li class="nav-item"><a href="{{ .Site.BaseURL }}/blog" title="Blog">Blog</a></li>
+                    <li class="nav-item"><a href="{{ .Site.BaseURL }}/about" title="About">About</a></li>
+                </ul>
+            </div>
+        </nav>

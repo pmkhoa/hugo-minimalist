@@ -1,0 +1,25 @@
+/******** Mixins *********/
+@mixin xlarge-screen-up {
+    @media only screen and (min-width: 80em) {
+        @content;
+    }
+}
+
+@mixin large-screen-up {
+    @media only screen and (min-width: 64em) {
+        @content;
+    }
+}
+
+@mixin medium-screen-up {
+    @media only screen and (min-width: 40em) {
+        @content;
+    }
+}
+
+@mixin small-screen-up {
+    @media only screen and (min-width: 30em) {
+        @content;
+    }
+}
+

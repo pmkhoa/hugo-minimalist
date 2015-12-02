@@ -1,0 +1,496 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: none; }
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+  color: black; }
+
+.hljs-string,
+.hljs-title,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-name,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute,
+.tp .hljs-variable {
+  color: #800; }
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+  color: #888; }
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+  color: #080; }
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+  color: #88f; }
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-doctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status,
+.tp .hljs-data,
+.tp .hljs-io {
+  font-weight: bold; }
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis,
+.tp .hljs-units {
+  font-style: italic; }
+
+.nginx .hljs-built_in {
+  font-weight: normal; }
+
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5; }
+
+/******** Mixins *********/
+/***** Typography *****/
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/fonts/Sentinel-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Sentinel-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/Sentinel-Book.woff") format("woff"), url("/fonts/Sentinel-Book.ttf") format("truetype"), url("/fonts/Sentinel-Book.svg#fb7f01513910e38bdb2e628a3e62faf5") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/fonts/Sentinel-BookItal.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Sentinel-BookItal.eot?#iefix") format("embedded-opentype"), url("/fonts/Sentinel-BookItal.woff") format("woff"), url("/fonts/Sentinel-BookItal.ttf") format("truetype"), url("/fonts/Sentinel-BookItal.svg#10c46c0b2f5286365d095ecb051f5fd4") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/fonts/Sentinel-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Sentinel-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Sentinel-Medium.woff") format("woff"), url("/fonts/Sentinel-Medium.ttf") format("truetype"), url("/fonts/Sentinel-Medium.svg#8c906be98a0007abd9aa196765a84f28") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: 'Sentinel';
+  src: url("/fonts/Sentinel-MediumItal.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/Sentinel-MediumItal.eot?#iefix") format("embedded-opentype"), url("/fonts/Sentinel-MediumItal.woff") format("woff"), url("/fonts/Sentinel-MediumItal.ttf") format("truetype"), url("/fonts/Sentinel-MediumItal.svg#d4631b1e19290abc6bef2bf9286a54b7") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 500; }
+pre, .source-code, code, samp {
+  font-family: "Source Code Pro";
+  font-size: 0.9em;
+  background: #F4F4F4;
+  padding: 0 5px; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+  font-family: "Sentinel", Georgia, Times, "Times New Roman", serif;
+  margin: 0.5em 0; }
+
+h1 {
+  font-size: 1.95em;
+  line-height: 1em;
+  font-weight: 400; }
+  @media only screen and (min-width: 40em) {
+    h1 {
+      font-size: 2.15em; } }
+
+h2 {
+  font-size: 1.45em;
+  line-height: 1em;
+  font-weight: 400; }
+  @media only screen and (min-width: 40em) {
+    h2 {
+      font-size: 1.65em; } }
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.2; }
+
+h4 {
+  font-size: 1.15em;
+  font-weight: 500; }
+
+strong {
+  font-weight: 500; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+p {
+  margin: 0.5em 0 1em 0; }
+
+/******* Website style *******/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  color: #101011;
+  font-family: "Sentinel", Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.05em;
+  line-height: 1.6989;
+  margin: 0; }
+
+.wrap {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%; }
+  .wrap::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (min-width: 80em) {
+    .wrap {
+      width: 100%; } }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: rgba(0, 0, 0, 0.75); }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 60px; }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.header .inner-header {
+  padding: 25px 15px 40px 15px; }
+.header a {
+  text-decoration: none; }
+.header #logo {
+  margin-bottom: 12px;
+  font-size: 2.15em; }
+.header .header-nav {
+  padding: 0;
+  margin: 0; }
+  .header .header-nav .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase; }
+
+.footer-copyright {
+  font-size: 0.9rem;
+  padding: 5px 0;
+  text-align: center; }
+
+.Article-container {
+  padding: 0 0 50px 0; }
+  .Article-container .link-to-article {
+    text-decoration: none; }
+  .Article-container .Article-content {
+    padding: 0 15px; }
+    .Article-container .Article-content ul, .Article-container .Article-content ol {
+      margin: 1em 0;
+      padding-left: 1.5em; }
+  .Article-container .Article-title {
+    font-size: 1.85em; }
+  .Article-container .Article-summary-wrapper {
+    padding: 0; }
+  .Article-container .Article-summary {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 30px 15px 20px 15px; }
+    .Article-container .Article-summary:hover {
+      background: rgba(0, 0, 0, 0.02); }
+    .Article-container .Article-summary h3 {
+      margin-top: 0; }
+    .Article-container .Article-summary p {
+      color: #5b5b5b;
+      margin: 0.5em 0; }
+  .Article-container .Article-related {
+    background-color: rgba(247, 247, 247, 0.6);
+    font-size: 0.9em;
+    padding: 40px 0;
+    margin-top: 40px; }
+    .Article-container .Article-related .Article-related-content {
+      padding-bottom: 20px; }
+    .Article-container .Article-related .link-to-article:last-of-type .Article-summary {
+      border-bottom: 0; }
+    .Article-container .Article-related .Article-related-title {
+      text-align: center; }
+      .Article-container .Article-related .Article-related-title span {
+        font-size: 0.7em;
+        margin-right: 10px;
+        position: relative;
+        display: inline-block;
+        top: -1px; }
+    .Article-container .Article-related .Article-summary {
+      padding: 20px 15px 10px 15px; }
+    .Article-container .Article-related h4 {
+      margin-top: 0; }
+
+.Page-about .about-inner-content {
+  margin-bottom: 40px;
+  padding: 0 15px; }
+
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<section id="main">
+    <div class="Article-wrapper">
+        <div class="Article-container">
+            <div class="Article-content Article-summary-wrapper wrap clearfix">
+                {{ range .Data.Pages }}
+                {{ .Render "li" }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
