@@ -402,7 +402,17 @@ img {
   height: auto; }
 
 a {
-  color: rgba(0, 0, 0, 0.75); }
+  border-bottom: 1px solid #dddddd;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none; }
+  a:hover {
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    transition: all 0.15s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75); }
 
 .videoWrapper {
   position: relative;
@@ -420,11 +430,10 @@ a {
 
 .header .inner-header {
   padding: 25px 15px 40px 15px; }
-.header a {
-  text-decoration: none; }
 .header #logo {
-  margin-bottom: 12px;
-  font-size: 2.15em; }
+  border: 0;
+  font-size: 2.15em;
+  margin-bottom: 12px; }
 .header .header-nav {
   padding: 0;
   margin: 0; }
@@ -441,7 +450,7 @@ a {
 .Article-container {
   padding: 0 0 50px 0; }
   .Article-container .link-to-article {
-    text-decoration: none; }
+    border-bottom: 0; }
   .Article-container .Article-content {
     padding: 0 15px; }
     .Article-container .Article-content ul, .Article-container .Article-content ol {
@@ -486,6 +495,8 @@ a {
         top: -1px; }
     .Article-container .Article-related .Article-summary {
       padding: 20px 15px 10px 15px; }
+      .Article-container .Article-related .Article-summary:hover {
+        background: none; }
     .Article-container .Article-related h4 {
       margin-top: 0; }
 
