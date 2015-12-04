@@ -1,22 +1,22 @@
-<meta name="keywords" content="Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland" >
-<meta name="description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres."/>
+<meta name="keywords" content="{{ .Site.Params.Keywords}} " >
+<meta name="description" content="{{ .Site.Params.Description }} "/>
 <meta name="viewport" content="width=device-width initial-scale=1.0" />
 <link rel="canonical" href="{{ .Site.BaseURL }}" />
-<link rel="author" href="https://plus.google.com/103713398374675106375/"/>
+<link rel="author" href="{{ .Site.Params.GooglePlus }}"/>
 
 <!--FACEBOOK-->
-<meta property="og:title" content="Khoa Pham - Web Developer" >
-<meta property="og:site_name" content="Khoa Pham">
+<meta property="og:title" content="{{ .Site.Title }}" >
+<meta property="og:site_name" content="{{ .Site.Params.SiteName }}">
 <meta property="og:url" content="{{ .Site.BaseURL }}" >
-<meta property="og:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
-<meta property="og:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+<meta property="og:description" content="{{ .Site.Params.Description }}" >
+<meta property="og:image" content="{{ .Site.Params.AuthorImage }}" >
 <meta property="og:type" content="website" >
 <meta property="og:locale" content="en_US" >
 <!--TWITTER-->
 <meta property="twitter:card" content="summary" >
-<meta property="twitter:title" content="Khoa Pham is a senior developer focusing on UX and writing good code." >
-<meta property="twitter:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
-<meta property="twitter:creator" content="@pmkhoa" >
+<meta property="twitter:title" content="{{ .Site.Params.SiteName }}" >
+<meta property="twitter:description" content="{{ .Site.Params.Description }}" >
+<meta property="twitter:creator" content="{{ .Site.Params.TwitterHandler }}" >
 <meta property="twitter:url" content="{{ .Site.BaseURL }}" >
-<meta property="twitter:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+<meta property="twitter:image" content="{{ .Site.Params.AuthorImage }} " >
 
