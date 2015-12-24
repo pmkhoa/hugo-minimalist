@@ -2,8 +2,7 @@
 @import "mixins";
 @import "typography";
 
-$black-fallback: #222222;
-$black: rgba(0, 0, 0, 0.75);
+$black: #101011;
 $border-color: rgba(0, 0, 0, 0.05);
 $light-gray: rgba(0, 0, 0, 0.6);
 
@@ -16,21 +15,26 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: #101011;
+    color: $black;
     font-family: $serif;
     font-weight: 400;
     font-size: 1.05em;
     line-height: golden-ratio(1.05, 1);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-spacing: 1px;
     margin: 0;
 }
 
 .wrap {
     @include clearfix();
-    max-width: 760px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     width: 92%;
-    @include xlarge-screen-up {
+    @include large-screen-up {
         width: 100%;
     }
 }
@@ -128,7 +132,6 @@ a {
             margin-top: 0;
         }
         p {
-            color: #5b5b5b;
             margin: 0.5em 0;
         }
     }
