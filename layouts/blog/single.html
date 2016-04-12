@@ -19,7 +19,7 @@
                     {{ $page := . }}
                     {{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
                     {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
-                        {{ .Render "li" }}
+                        {{ partial "related_posts" . }}
                     {{ end }}
                 {{ end }}
             </div>

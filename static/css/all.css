@@ -487,11 +487,13 @@ a {
     padding: 40px 0;
     margin-top: 40px; }
     .Article-container .Article-related .Article-related-content {
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      max-width: 520px; }
     .Article-container .Article-related .link-to-article:last-of-type .Article-summary {
       border-bottom: 0; }
     .Article-container .Article-related .Article-related-title {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20px; }
       .Article-container .Article-related .Article-related-title span {
         font-size: 0.7em;
         margin-right: 10px;
