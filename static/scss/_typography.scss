@@ -49,8 +49,10 @@ $serif: 'Sentinel', Georgia, Times, 'Times New Roman', serif;
 pre, .source-code, code, samp {
     font-family: $mono;
     font-size: 0.9em;
-    background: #F4F4F4;
-    padding: 0 5px;
+}
+
+pre code {
+    padding: 0.7em !important;
 }
 
 h1, h2, h3, h4, h5 {

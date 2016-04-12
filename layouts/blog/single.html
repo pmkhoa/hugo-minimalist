@@ -3,6 +3,7 @@
     <div class="Article-container">
         <div class="Article-content wrap clearfix">
             <h1 class="Article-title">{{ .Title }}</h1>
+            <p><time datetime="{{.Date}}"><em>{{ .Date.Format "January 2, 2006" }}</em></time>
             {{ .Content }}
         </div>
         {{ if .Site.Params.ShowRelatedPost }}

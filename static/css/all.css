@@ -321,9 +321,10 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
   font-weight: 500; }
 pre, .source-code, code, samp {
   font-family: "Source Code Pro";
-  font-size: 0.9em;
-  background: #F4F4F4;
-  padding: 0 5px; }
+  font-size: 0.9em; }
+
+pre code {
+  padding: 0.7em !important; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 500;
